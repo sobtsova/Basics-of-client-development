@@ -1,5 +1,8 @@
 body {
-    background-color: #FFA07A;
+    background-image: url('images/natlan_back.jpg') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: Courier New, monospace;
     line-height: 1.6;
     text-align: justify;

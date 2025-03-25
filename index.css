@@ -1,10 +1,12 @@
 body {
-    background-color: #DDA0DD !important;
+    background-image: url('images/pink_back.png') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: Courier New, monospace;
     line-height: 1.6;
     text-align: justify;
     margin: 100px;
-    
 }
 h1 {
     color: #000000;
@@ -65,23 +67,6 @@ ul {
 
 }
 
-ol {
-    list-style-type: decimal;
-}
-
-dl {
-    margin: 20px;
-    padding-left: 40px;
-}
-
-dt {
-    font-weight: bold;
-}
-
-dd {
-    margin-left: 20px;
-}
-
 p.special {
     text-align: center;
     font-style: italic;
@@ -93,5 +78,9 @@ table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
+}
+
+#highlight {
+    color: blueviolet;
 }
 

@@ -1,5 +1,8 @@
 body {
-    background-color: #87CEFA;
+    background-image: url('images/fontaine_back.jpg') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: Courier New, monospace;
     line-height: 1.6;
     text-align: justify;
@@ -49,6 +52,14 @@ th, td {
 th {
     background-color: #4682B4;
     color: white;
+}
+
+dd {
+    font-size: 20px;
+}
+
+dt {
+    font-size: 20px;
 }
 
 ul {
