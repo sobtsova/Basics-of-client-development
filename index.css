@@ -55,19 +55,36 @@ th {
     color: white;
 }
 
-ul, ol {
+ul {
     font-size: 20px;
     margin: 20px;
     padding-left: 40px;
     text-align: center;
 }
 
+ol {
+    font-size: 20px;
+    margin: 20px auto;
+    padding-left: 40px;
+    text-align: justify;
+    background-color: #FFE4E1;
+    border-radius: 10px;
+    padding: 15px;
+    width: 70%;
+    list-style-type: decimal;
+}
+
+    ol li {
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
 ul {
     list-style: none;
 
 }
 
-p.special {
+.special {
     text-align: center;
     font-style: italic;
     color: #8B008B;
@@ -80,7 +97,7 @@ table {
     border-collapse: collapse;
 }
 
-#highlight {
+#new_color {
     color: blueviolet;
 }
 
