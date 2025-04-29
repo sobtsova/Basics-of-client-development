@@ -101,3 +101,46 @@ table {
     color: blueviolet;
 }
 
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFE4E1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    z-index: 1000;
+    border-bottom: 2px solid #8B008B;
+}
+
+.nav-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* ѕсевдокласи посилань зображень */
+.top-nav a:link img {
+    opacity: 0.8;
+}
+
+.top-nav a:visited img {
+    opacity: 1;
+    border: 2px solid #000000;
+}
+
+.top-nav a:hover img {
+    transform: scale(1.1);
+    opacity: 1;
+    border: 2px solid #6A5ACD;
+}
+
+.top-nav a:active img {
+    transform: scale(0.95);
+    opacity: 0.7;
+    border: 2px solid #FF69B4;
+}
+

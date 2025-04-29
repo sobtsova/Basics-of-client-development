@@ -23,7 +23,6 @@ h2 {
     background-color: #FF6347;
 }
 
-/* сусідній селектор */
     h2 + ul {
         border: 2px solid #FF6347;
         padding: 15px;
@@ -67,7 +66,7 @@ ul {
     font-size: 20px;
     list-style: none;
 }
-    /* контекстний селектор */
+
     ul li {
         margin-bottom: 10px;
         background-color: #FF4500;
@@ -90,7 +89,6 @@ ul {
         background-color: #FF6347;
     }
 
-/* дочірний селектор */
 div > img { 
     border: 3px solid #FF4500;
     border-radius: 10px;

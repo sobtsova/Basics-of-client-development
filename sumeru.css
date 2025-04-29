@@ -1,4 +1,4 @@
-body {
+﻿body {
     background-image: url('images/sumeru_back.jpg') !important;
     background-size: cover;
     background-repeat: no-repeat;
@@ -81,3 +81,66 @@ img {
     .go-home:hover {
         background-color: #6B8E23;
     }
+
+/* Плаваючий блок з position і float */
+.float-block {
+    width: 300px;
+    float: right;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border: 2px solid #006400;
+    position: relative;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Стилізований span */
+.label {
+    font-weight: bold;
+    color: #228B22;
+}
+
+/* Блок із псевдоелементами */
+.info-block::before {
+    content: "🧠";
+    margin-right: 8px;
+}
+
+.info-block::after {
+    content: "🌱";
+    margin-left: 8px;
+}
+
+.info-block {
+    background-color: rgba(240, 255, 240, 0.8);
+    padding: 10px;
+    border-left: 5px solid #006400;
+    margin-top: 30px;
+    position: relative;
+}
+
+/* Псевдоклас :first-child для списку */
+ul li:first-child {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+}
+
+/* Псевдокласи посилання */
+a:link {
+    color: #4682B4;
+}
+
+a:visited {
+    color: #8A2BE2;
+}
+
+a:active {
+    color: red;
+}
+
+
+/* Псевдоклас для підсвітки span */
+.highlight {
+    background-color: #ADFF2F;
+    font-weight: bold;
+}
