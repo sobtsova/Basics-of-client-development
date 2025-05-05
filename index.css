@@ -1,5 +1,5 @@
 body {
-    background-image: url('images/pink_back.png') !important;
+    background-image: url('images/pink_back.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -60,6 +60,7 @@ ul {
     margin: 20px;
     padding-left: 40px;
     text-align: center;
+    list-style: none;
 }
 
 ol {
@@ -78,11 +79,6 @@ ol {
         margin-bottom: 10px;
         font-weight: bold;
     }
-
-ul {
-    list-style: none;
-
-}
 
 .special {
     text-align: center;
@@ -128,8 +124,8 @@ table {
 }
 
 .top-nav a:visited img {
-    opacity: 1;
-    border: 2px solid #000000;
+    outline: 2px solid black;
+    outline-offset: 2px;
 }
 
 .top-nav a:hover img {

@@ -82,14 +82,13 @@ img {
         background-color: #6B8E23;
     }
 
-/* Плаваючий блок з position і float */
+/* Плаваючий блок з float */
 .float-block {
     width: 300px;
     float: right;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 15px;
     border: 2px solid #006400;
-    position: relative;
     margin: 20px;
     border-radius: 10px;
 }
@@ -116,7 +115,6 @@ img {
     padding: 10px;
     border-left: 5px solid #006400;
     margin-top: 30px;
-    position: relative;
 }
 
 /* Псевдоклас :first-child для списку */
@@ -137,7 +135,6 @@ a:visited {
 a:active {
     color: red;
 }
-
 
 /* Псевдоклас для підсвітки span */
 .highlight {
