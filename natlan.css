@@ -1,5 +1,5 @@
 body {
-    background-image: url('images/natlan_back.jpg') !important;
+    background-image: url('images/natlan_back.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-    color: #black;
+    color: black;
     text-align: center;
     font-size: 3em;
     background-color: #FF6347;
@@ -94,3 +94,39 @@ div > img {
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
+
+#menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+    #menu button {
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        color: white;
+    }
+
+        #menu button[data-action="toggle-title"] {
+            background: linear-gradient(to right, #dd2476, #ff512f);
+        }
+
+        #menu button[data-action="change-bg"] {
+            background: linear-gradient(to right, #ff512f, #f5af19);
+        }
+
+        #menu button[data-action="reload"] {
+            background: linear-gradient(to right, #f5af19, #dd2476);
+        }
+
+        #menu button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(255, 87, 34, 0.5);
+        }
