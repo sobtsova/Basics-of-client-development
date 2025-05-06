@@ -60,9 +60,20 @@ ul {
     list-style: none;
 }
 
+li {
+    transition: background-color 0.3s, color 0.3s;
+    padding: 5px;
+}
+
 img {
     width: 800px; 
     height: 100%; 
+}
+
+.hovered {
+    background-color: #e0f7da;
+    color: #2e7d32;
+    border-left: 4px solid #66bb6a;
 }
 
 .go-home {
@@ -82,24 +93,24 @@ img {
         background-color: #6B8E23;
     }
 
-/* Плаваючий блок з float */
 .float-block {
+    position: absolute;
+    top: 100px;
+    left: 100px;
     width: 300px;
-    float: right;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #f0fff4;
+    border: 2px solid #81c784;
     padding: 15px;
-    border: 2px solid #006400;
-    margin: 20px;
+    cursor: grab;
+    user-select: none;
     border-radius: 10px;
 }
 
-/* Стилізований span */
 .label {
     font-weight: bold;
     color: #228B22;
 }
 
-/* Блок із псевдоелементами */
 .info-block::before {
     content: "🧠";
     margin-right: 8px;
@@ -117,13 +128,11 @@ img {
     margin-top: 30px;
 }
 
-/* Псевдоклас :first-child для списку */
 ul li:first-child {
     background-color: rgba(255, 255, 255, 0.5);
     font-style: italic;
 }
 
-/* Псевдокласи посилання */
 a:link {
     color: #4682B4;
 }
@@ -136,7 +145,6 @@ a:active {
     color: red;
 }
 
-/* Псевдоклас для підсвітки span */
 .highlight {
     background-color: #ADFF2F;
     font-weight: bold;

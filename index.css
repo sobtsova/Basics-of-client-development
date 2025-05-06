@@ -118,7 +118,6 @@ table {
     transition: transform 0.3s, opacity 0.3s;
 }
 
-/* ѕсевдокласи посилань зображень */
 .top-nav a:link img {
     opacity: 0.8;
 }
