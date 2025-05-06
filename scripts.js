@@ -75,19 +75,22 @@ function manipulateDOM() {
     `;
 
     const beforeTable = document.createElement("p");
-    beforeTable.append(document.createTextNode("Це новий абзац перед таблицею."));
+    beforeTable.append(document.createTextNode("🔎 Нижче представлена таблиця з прикладами персонажів з різних регіонів Тейвату."));
     const afterTable = document.createElement("p");
-    afterTable.textContent = "Це повідомлення після таблиці.";
+    afterTable.textContent = "📌 Це кінець списку. Дані можуть оновлюватися з виходом нових регіонів або персонажів.";
 
     document.body.append(beforeTable);
     document.body.append(editableTable);
     editableTable.after(afterTable);
 
     const replacement = document.createElement("p");
-    replacement.textContent = "Це елемент, що замінює попередній.";
-    beforeTable.replaceWith(replacement);
+    replacement.textContent = "⚠️ Цей блок оновлено. Попередній текст замінено для відображення актуальної інформації.";
 
-    afterTable.remove();
+    setTimeout(() => {
+        beforeTable.replaceWith(replacement);
+        afterTable.remove();
+    }, 10000);
+
 }
 
 function redirectToPage() {
