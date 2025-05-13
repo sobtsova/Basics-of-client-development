@@ -171,8 +171,8 @@ a:active {
 
 #butterfly {
     position: absolute;
-    top: 100%;
-    left: 35%;
+    top: 1250px;
+    left: 650px;
     transform: scale(0.1); 
     transform-origin: center center; 
     cursor: grab;
