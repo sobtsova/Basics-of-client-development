@@ -149,3 +149,47 @@ a:active {
     background-color: #ADFF2F;
     font-weight: bold;
 }
+
+#secret-zone {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: none;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    #secret-zone img {
+        width: 100px;
+        height: 100px;
+        
+    }
+
+#butterfly {
+    position: absolute;
+    top: 100%;
+    left: 35%;
+    transform: scale(0.1); 
+    transform-origin: center center; 
+    cursor: grab;
+    z-index: 500;
+    width: auto;
+    height: auto;
+}
+
+
+#secret-message {
+    position: fixed;
+    top: 120px;
+    right: 10px;
+    background-color: #ffffffdd;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    font-size: 14px;
+    z-index: 1001;
+}
